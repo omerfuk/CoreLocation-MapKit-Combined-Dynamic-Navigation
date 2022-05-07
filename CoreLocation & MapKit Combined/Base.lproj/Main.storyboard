@@ -1,24 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CoreLocation___MapKit_Combined" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t2P-nG-0qg">
+                                <rect key="frame" x="186" y="403" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sXR-J0-ojN">
+                                <rect key="frame" x="186" y="501" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vGA-3X-dDZ">
+                                <rect key="frame" x="186" y="602" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="h38-ec-pfx">
+                                <rect key="frame" x="20" y="70" width="374" height="284"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="284" id="HEL-gx-IHs"/>
+                                    <constraint firstAttribute="width" constant="374" id="IHY-RT-UoI"/>
+                                </constraints>
+                            </mapView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vGA-3X-dDZ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3Vs-yM-pOq"/>
+                            <constraint firstItem="sXR-J0-ojN" firstAttribute="top" secondItem="t2P-nG-0qg" secondAttribute="bottom" constant="77" id="Dj7-oN-IFd"/>
+                            <constraint firstItem="sXR-J0-ojN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QtO-iu-xGn"/>
+                            <constraint firstItem="t2P-nG-0qg" firstAttribute="top" secondItem="h38-ec-pfx" secondAttribute="bottom" constant="49" id="Xos-Ll-iYN"/>
+                            <constraint firstItem="vGA-3X-dDZ" firstAttribute="top" secondItem="sXR-J0-ojN" secondAttribute="bottom" constant="80" id="bIF-dA-gQt"/>
+                            <constraint firstItem="t2P-nG-0qg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qyd-VE-Ipm"/>
+                            <constraint firstItem="h38-ec-pfx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="26" id="rom-YV-7ru"/>
+                            <constraint firstItem="h38-ec-pfx" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vhH-Qr-kbG"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="boylamLabel" destination="sXR-J0-ojN" id="7lR-E9-3fN"/>
+                        <outlet property="enlemLabel" destination="t2P-nG-0qg" id="s5p-0S-6JS"/>
+                        <outlet property="hizLabel" destination="vGA-3X-dDZ" id="jim-dK-oXe"/>
+                        <outlet property="mapView" destination="h38-ec-pfx" id="nwj-df-vnM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-26.086956521739133" y="93.75"/>
         </scene>
     </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

@@ -16,6 +16,8 @@
 		DEF3CABA282685D60050081C /* CoreLocation___MapKit_CombinedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF3CAB9282685D60050081C /* CoreLocation___MapKit_CombinedTests.swift */; };
 		DEF3CAC4282685D60050081C /* CoreLocation___MapKit_CombinedUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF3CAC3282685D60050081C /* CoreLocation___MapKit_CombinedUITests.swift */; };
 		DEF3CAC6282685D60050081C /* CoreLocation___MapKit_CombinedUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEF3CAC5282685D60050081C /* CoreLocation___MapKit_CombinedUITestsLaunchTests.swift */; };
+		DEF3CAD4282686090050081C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEF3CAD3282686090050081C /* CoreLocation.framework */; };
+		DEF3CAD6282686100050081C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DEF3CAD5282686100050081C /* MapKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		DEF3CABF282685D60050081C /* CoreLocation & MapKit CombinedUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "CoreLocation & MapKit CombinedUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DEF3CAC3282685D60050081C /* CoreLocation___MapKit_CombinedUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreLocation___MapKit_CombinedUITests.swift"; sourceTree = "<group>"; };
 		DEF3CAC5282685D60050081C /* CoreLocation___MapKit_CombinedUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CoreLocation___MapKit_CombinedUITestsLaunchTests.swift"; sourceTree = "<group>"; };
+		DEF3CAD3282686090050081C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		DEF3CAD5282686100050081C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DEF3CAD6282686100050081C /* MapKit.framework in Frameworks */,
+				DEF3CAD4282686090050081C /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +89,7 @@
 				DEF3CAB8282685D60050081C /* CoreLocation & MapKit CombinedTests */,
 				DEF3CAC2282685D60050081C /* CoreLocation & MapKit CombinedUITests */,
 				DEF3CAA0282685D30050081C /* Products */,
+				DEF3CAD2282686090050081C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -125,6 +132,15 @@
 				DEF3CAC5282685D60050081C /* CoreLocation___MapKit_CombinedUITestsLaunchTests.swift */,
 			);
 			path = "CoreLocation & MapKit CombinedUITests";
+			sourceTree = "<group>";
+		};
+		DEF3CAD2282686090050081C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DEF3CAD5282686100050081C /* MapKit.framework */,
+				DEF3CAD3282686090050081C /* CoreLocation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
